@@ -64,7 +64,7 @@ gulp.task('html', ['views', 'styles'], function () {
 });
 
 gulp.task('images', function () {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/images/**/*.*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -72,7 +72,7 @@ gulp.task('images', function () {
       // as hooks for embedding and styling
       svgoPlugins: [{cleanupIDs: false}]
     })))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/images/'));
 });
 
 gulp.task('fonts', function () {
@@ -194,7 +194,7 @@ gulp.task('views', function () {
 });
 
 gulp.task('deploy', function() {
-  return gulp.src(['dist/**/*', '!dist/styles/**/*', '!dist/scripts/**/*'])
+  return gulp.src(['dist/**/*'])
     .pipe($.ghPages({
       branch: 'master'
     }));

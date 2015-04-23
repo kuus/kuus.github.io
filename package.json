@@ -53,11 +53,9 @@
     "minimist": "~1.1.1",
     "gulp-inline": "0.0.10",
     "gulp-strip-comments": "~1.0.1",
+    "gulp-selectors": "~0.1.7",
     "gulp-base64": "~0.1.2",
     "gulp-cdnizer": "~1.1.5",
     "gulp-gh-pages": "~0.5.1"
-  },
-  "dependencies": {
-    "gulp-selectors": "~0.1.7"
   }
 }

@@ -194,6 +194,6 @@ gulp.task('views', function () {
 });
 
 gulp.task('deploy', function() {
-  return gulp.src('dist/**/*')
+  return gulp.src(['dist/**/*', '!dist/styles/**/*', '!dist/scripts/**/*'])
     .pipe($.ghPages());
 });

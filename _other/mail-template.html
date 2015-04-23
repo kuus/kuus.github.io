@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>k6 mail signature</title>
+
+<style>
+
+#logo { position:relative; width:100px }
+#ldummy { margin-top:100% }
+.lb { position:absolute }
+.gK { top:8%; left:8%; width:42%; height:42%; background:#fff;
+      color:#000; line-height:170%; }
+.gK:after { content:"K" }
+.g6 { bottom:6%; right:6%; width:44%; height:44%; background:#ededed; opacity:.6; /*border:1px dashed #666; */
+      color:#666; line-height:160%; }
+.g6:after {  content:"6" }
+
+.t, .r, .b, .l, .d { background:black; z-index:1; /*box-shadow:2px 2px 2px #333*/ }
+.t, .b { width:52%; height:4% }
+.l, .r { width:4%; height:52% }
+.t { top:6% }
+.r { left:48%; top:6% }
+.b { top:48%; left:6% }
+.l { left:6%; top:0 }
+.d { top:0; left:58%; width:.5%; height:68%; -moz-transform:rotate(45deg); -moz-transform-origin:top; -webkit-transform:rotate(45deg); -webkit-transform-origin:top; -o-transform:rotate(45deg); -o-transform-origin:top; -ms-transform:rotate(45deg); -ms-transform-origin:top; transform:rotate(45deg); transform-origin:top; }
+
+
+.gK {background-image:-moz-linear-gradient(0 0,
+     rgba(0,0,0,0) 0%, rgba(90,90,40, .3) 100% );
+     background-image:-webkit-linear-gradient(top left,
+     rgba(0,0,0,0) 0%, rgba(90,90,40, .3) 100% );
+     background-image:-o-linear-gradient(0 0,
+     rgba(0,0,0,0) 0%, rgba(90,90,40, .3) 100% );
+     background-image:linear-gradient(0 0,
+     rgba(0,0,0,0) 0%, rgba(90,90,40, .3) 100% );
+}
+.g6 {background-image:-moz-linear-gradient(0 0,
+     rgba(255,255,255, 1) 0%, rgba(10,10,10,.1) 100%);
+     background-image:-webkit-linear-gradient(top left,
+     rgba(255,255,255, 1) 0%, rgba(10,10,10,.1) 100%);
+     background-image:-o-linear-gradient(0 0,
+     rgba(255,255,255, 1) 0%, rgba(10,10,10,.1) 100%);
+     background-image:linear-gradient(0 0,
+     rgba(255,255,255, 1) 0%, rgba(10,10,10,.1) 100%)
+}
+.t, .l {background-image:-moz-linear-gradient(0 0,
+        rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 25%, rgba(255, 255, 255, 0) 50% );
+        background-image:-webkit-linear-gradient(top left,
+        rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 13%, rgba(255, 255, 255, 0) 25% );
+        background-image:-o-linear-gradient(0 0,
+        rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 25%, rgba(255, 255, 255, 0) 50% );
+        background-image:linear-gradient(0 0,
+        rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .8) 25%, rgba(255, 255, 255, 0) 50% );
+}
+
+
+
+</style>
+</head>
+<body>
+
+<table width="600" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;max-width:600px">
+    <tr><!-- LOGO k6 -->
+        <td style="width:61px">
+            <a href="http://kunderikuus.net" target="_blank" title="Reach kunderikuus.net">
+            <table cellspacing="0" cellpadding="0" border="0">
+                <tr><td style="width:5px;height:5px">
+                    <td style="width:5px;background:#000">
+                    <td style="width:20px">
+                    <td style="width:5px;">
+                    <td style="width:5px;">
+                    <td style="width:22px">
+                <tr style="height:5px;background:#000">
+                    <td colspan="4">
+                <tr><td>
+                    <td style="height:5px;background:#000">
+                    <td rowspan="4" valign="middle" style="background-color:#fff;text-align:center;font-weight:bold;color:#000">K
+                    <td style="background:#000">
+                <tr><td>
+                    <td style="height:5px;background:#000">
+                    <td style="background:#000">
+                <tr><td>
+                    <td style="height:5px;background:#000">
+                    <td style="background:#000">
+                <tr><td>
+                    <td style="height:5px;background:#000">
+                    <td style="background:#000">
+                <tr><td>
+                    <td colspan="4" style="height:5px;background:#000">
+                <tr><td colspan="3">
+                    <td style="height:5px;background:#000">
+                    <td colspan="6" rowspan="2" valign="middle" style="background-color:#eee;border:1px dashed #999;text-align:center;font-weight:bold;color:#666">6
+                <tr><td style="height:22px">
+            </table>
+            </a>
+        </td>
+        <!-- / LOGO k6 -->
+        <td style="width:10px">
+        <td valign="bottom" style="font:45px 'Impact',sans-serif;color:#999">kunderikuus<span style="font:20px sans-serif;color:#ddd">&nbsp;|&nbsp;</span><span style="font:15px 'Impact',sans-serif;color:#ccc"> A CUT ALONG THE WEB</span>
+    <tr style="height:5px"></tr>
+    <tr>
+        <td colspan="5" style="text-align:center;padding:10px">TITLE OF EMAIL
+    </tr>
+    <tr style="height:5px"></tr>
+    <tr>
+        <td colspan="5" style="padding:10px">Sectie 1.10.32 van "de Finibus Bonorum et Malorum", geschreven door Cicero in 45 v.Chr.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    </tr>
+    <tr style="height:15px"></tr>
+</table>
+
+<table width="300px" cellspacing="0" cellpadding="0" border="0" style="background:#eee;border-collapse:collapse;width:300px">
+<caption style="color:#999;padding:10px;background:#a3b5a6">Alessandro Sansottera | k6</caption>
+<tr><!-- LOGO k6 -->
+    <td style="width:61px">
+        <a href="http://kunderikuus.net" target="_blank" title="Reach kunderikuus.net">
+        <table cellspacing="0" cellpadding="0" border="0">
+            <tr><td style="width:5px;height:5px">
+                <td style="width:5px;background:#000">
+                <td style="width:20px">
+                <td style="width:5px;">
+                <td style="width:5px;">
+                <td style="width:22px">
+            <tr style="height:5px;background:#000">
+                <td colspan="4">
+            <tr><td>
+                <td style="height:5px;background:#000">
+                <td rowspan="4" style="background-color:#fff;text-align:center;font-weight:bold;color:#000">K
+                <td style="background:#000">
+            <tr><td>
+                <td style="height:5px;background:#000">
+                <td style="background:#000">
+            <tr><td>
+                <td style="height:5px;background:#000">
+                <td style="background:#000">
+            <tr><td>
+                <td style="height:5px;background:#000">
+                <td style="background:#000">
+            <tr><td>
+                <td colspan="4" style="height:5px;background:#000">
+            <tr><td colspan="3">
+                <td style="height:5px;background:#000">
+                <td colspan="6" rowspan="2" style="background-color:#eee;border:1px dashed #999;text-align:center;font-weight:bold;color:#666">6
+            <tr><td style="height:22px">
+        </table>
+        </a>
+    </td>
+    <!-- / LOGO k6 -->
+    <td>
+        <!-- / CONTACT TABLE k6 -->
+        <table>
+            <tr><th style="text-align:right;width:20%">website:<td style="text-align:left;padding-left:10px"><a href="http://kunderikuus.net" title="Take a look at my portfolio">kunderikuus.net</a>
+            <tr><th style="text-align:right;width:20%">mail:<td style="text-align:left;padding-left:10px"><a href="mailto:k6@kunderikuus.net" title="Write me an email">k6@kunderikuus.net</a>
+            <tr><th style="text-align:right;width:20%">mobile:<td style="text-align:left;padding-left:10px">+31 (0) 612283572
+            <tr><th>
+        </table>
+        <!-- / LOGO k6 -->
+</table>
+</body></html>

@@ -1,0 +1,32 @@
+/**
+ * Resume
+ */
+.resume {
+  display: none;
+  position: absolute;
+  z-index: -2;
+  top: 10%;
+  left: 10%;
+  line-height: 40%;
+  opacity: .2;
+  width: 80%;
+  color: #666;
+  transform: rotate(-8deg);
+
+  @media screen and (min-width: 440px) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 60%;
+  }
+
+  &-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}

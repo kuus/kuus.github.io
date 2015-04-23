@@ -1,0 +1,9 @@
+{
+  "name": "kunderikuus.net",
+  "private": true,
+  "dependencies": {
+    "reset-scss": "*",
+    "jquery": "~1.11.2",
+    "FitText.js": "~1.2.0"
+  }
+}

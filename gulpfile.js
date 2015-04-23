@@ -195,5 +195,7 @@ gulp.task('views', function () {
 
 gulp.task('deploy', function() {
   return gulp.src(['dist/**/*', '!dist/styles/**/*', '!dist/scripts/**/*'])
-    .pipe($.ghPages());
+    .pipe($.ghPages({
+      branch: 'master'
+    }));
 });

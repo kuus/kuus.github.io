@@ -68,14 +68,16 @@
         }
       } else {
         var str = resume.innerHTML;
+        var docfrag = document.createDocumentFragment();
         resume.innerHTML = '';
         for (var j = 0, k = str.length; j < k; j++) {
           var newSpan = document.createElement('span');
           newSpan.innerHTML = str[j];
           newSpan.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
           newSpan.style.fontSize = Math.floor(Math.random() * rFmaxSize + rFminSize) + 'px';
-          resume.appendChild(newSpan);
+          docfrag.appendChild(newSpan);
         }
+        resume.appendChild(docfrag);
       }
     }
   }
@@ -188,10 +190,10 @@
   // on ready
   $document.ready(function () {
 
+    $('.title').fitText();
+
     // resize immediately
     _resize();
-
-    $('.title').fitText();
 
     // on resize (debounced)
     $window.resize(debouncer(_resize));

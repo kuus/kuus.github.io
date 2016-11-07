@@ -1,0 +1,9 @@
+{
+  "appName": "Kuus Github",
+  "nav": [
+    {
+      "name": "About",
+      "url": "/about"
+    }
+  ]
+}

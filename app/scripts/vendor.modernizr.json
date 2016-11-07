@@ -1,0 +1,13 @@
+{
+  "crawl": false,
+  "customTests": [],
+  "tests": [
+    "svg",
+    "inlinesvg"
+  ],
+  "options": [
+    "mq",
+    "setClasses"
+  ],
+  "uglify": true
+}

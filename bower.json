@@ -1,9 +1,8 @@
 {
-  "name": "kunderikuus.net",
+  "name": "kuus-github",
   "private": true,
   "dependencies": {
-    "reset-scss": "*",
-    "jquery": "~1.11.2",
-    "FitText.js": "~1.2.0"
+    "reset-scss": "~2.0.2",
+    "gsap": "^1.19.0"
   }
 }

@@ -1,0 +1,22 @@
+/**
+ * Bower scss components
+ * (injected through wiredep).
+ *
+ */
+// bower:scss
+@import "bower_components/reset-scss/_reset-src.scss";
+// endbower
+
+
+/*! @license credits */
+/**
+ * kuus.github @imports
+ *
+ */
+// @import "components.logo.old";
+// disabled injectApp:scss
+@import "components.logo";
+@import "components.resume";
+@import "elements.icons";
+@import "generic.base";
+// disabled endinject

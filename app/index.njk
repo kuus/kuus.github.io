@@ -1,0 +1,23 @@
+{% extends 'layouts/default.njk' %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+  <noscript><img src="images/logo.png" title="Logo k6" alt="k6"/></noscript>
+  <aside class="resume-wrap">
+    <div id="resume" class="resume">web front end development responsive design graphic clean mobile first accessibility semantic seo html 5 css 3 javascript angularjs jquery gulp grunt bower git canvas</div>
+  </aside>
+  <section class="table">
+    <article class="table-cell">
+      {% include 'layouts/partials/logo.njk' %}
+      <nav class="links"><a href="https://github.com/kuus" title="Github" class="icon icon-github"></a><a href="https://nl.linkedin.com/in/kunderikuus" title="LinkedIn" class="icon icon-linkedin"></a><a href="mailto:kunderikuus@gmail.com" title="Email" class="icon icon-mail"></a></nav>
+      <header class="header">
+        <h1 class="title">kunderi kuus</h1>
+        <h2 class="subtitle"><b>Available for hiring.</b> Currently located in Italy<br>working on &nbsp;<a href="http://pluswp.com">pluswp</a>, an ambitious WordPress project.</h2>
+      </header>
+      <footer class="footer">
+        <h5>Copyright &copy; 2012 - <span id="copy-year">2016<span></h5>
+      </footer>
+    </article>
+  </section>
+{% endblock %}

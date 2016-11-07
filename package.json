@@ -1,13 +1,13 @@
 {
-  "name": "kunderikuus.net",
+  "name": "kuus-github",
   "version": "0.0.1",
-  "description": "My personal page",
+  "description": "Project description",
   "config": {
-    "namePretty": "kunderi kuus",
-    "nameShort": "k6",
-    "startYear": 2012
+    "namePretty": "Kuus Github",
+    "nameShort": "ku",
+    "startYear": 2016
   },
-  "homepage": "http://kunderikuus.net",
+  "homepage": "http://kuus-github.com",
   "author": {
     "name": "kuus",
     "email": "kunderikuus@gmail.com",
@@ -19,45 +19,67 @@
   },
   "private": true,
   "repository": {
-    "url": "https://github.com/kuus/kuus.github.io"
+    "preview": "http://kuus-github.kunderikuus.net/",
+    "url": "https://gitlab.com/kuus/kuus-github"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4"
   },
   "devDependencies": {
-    "autoprefixer-core": "^5.1.7",
+    "autoprefixer": "^6.3.3",
+    "babel-core": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.5.2",
     "browser-sync": "^2.2.1",
-    "del": "^1.1.1",
-    "gulp": "^3.8.11",
-    "gulp-cache": "^0.2.8",
-    "gulp-minify-css": "~1.0.0",
-    "gulp-csso": "^1.0.0",
-    "gulp-if": "^1.2.5",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-jshint": "^1.9.2",
-    "gulp-load-plugins": "^0.8.1",
-    "gulp-minify-html": "^1.0.0",
-    "gulp-jade": "~1.0.0",
-    "gulp-postcss": "^4.0.3",
-    "gulp-sass": "^1.3.3",
-    "gulp-size": "^1.2.1",
-    "gulp-sourcemaps": "^1.5.0",
-    "gulp-combine-media-queries": "~0.2.0",
-    "gulp-uglify": "^1.1.0",
-    "gulp-useref": "^1.1.1",
-    "gulp-header": "~1.2.2",
-    "jshint-stylish": "^1.0.1",
+    "css-mqpacker": "^4.0.0",
+    "del": "^2.2.0",
+    "extend": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-base64": "^0.1.3",
+    "gulp-cache": "^0.4.5",
+    "gulp-cache-bust": "^1.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-data": "^1.2.1",
+    "gulp-eslint": "^3.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-nunjucks-render": "2.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-prettify": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.4",
+    "gulp-useref": "^3.0.5",
+    "gulp-util": "^3.0.7",
+    "lazypipe": "^1.0.1",
+    "lodash.template": "^4.2.0",
     "main-bower-files": "^2.5.0",
-    "opn": "^1.0.1",
-    "wiredep": "^2.2.2",
-    "minimist": "~1.1.1",
-    "gulp-inline": "0.0.10",
-    "gulp-strip-comments": "~1.0.1",
-    "gulp-base64": "~0.1.2",
-    "gulp-cdnizer": "~1.1.5",
-    "gulp-gh-pages": "~0.5.1"
+    "minimist": "^1.2.0",
+    "wiredep": "^4.0.0"
   },
-  "dependencies": {
-    "gulp-selectors": "~0.1.7"
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
   }
 }

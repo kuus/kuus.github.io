@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block meta_title %}@kuus | kunderikuus.net{% block meta_title__post %}{% endblock %}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="kuus <kunderikuus@gmail.com> (http://kunderikuus.net)">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    {# Place favicon.ico in the root directory #}
+    <link href="http://fonts.googleapis.com/css?family=Oswald:700|Rokkitt:400" rel="stylesheet" type="text/css"/>
+    <!-- build:css styles/app.css inline-->
+    <!-- bower:css-->
+    <!-- endbower-->
+
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild-->
+  </head>
+  <body class="{% block body_class %}{% endblock %}">
+    {% block body %}
+    {% endblock %}
+
+    {% block body_scripts %}
+    {# Google Analytics: change UA-XXXXX-X to be your site's ID. #}
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-42275376-1');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/app.js inline-->
+    <script src="scripts/vendor.modernizr.js"></script>
+    <!-- bower:js -->
+    <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <!-- endbower -->
+    <!-- injectAppCustomVendors:js-->
+    <script src="scripts/vendor.fittext.js"></script>
+    <!-- endinject-->
+
+    <!-- inject:js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/logo.js"></script>
+    <!-- endinject -->
+    <!-- endbuild-->
+    {% endblock %}
+
+    {% block body_end %}
+    {% endblock %}
+  </body>
+</html>

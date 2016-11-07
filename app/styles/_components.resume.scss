@@ -2,13 +2,12 @@
  * Resume
  */
 .resume {
-  display: none;
   position: absolute;
   z-index: -2;
   top: 10%;
   left: 10%;
   line-height: 40%;
-  opacity: .2;
+  opacity: 0; // .2 (in js)
   width: 80%;
   color: #666;
   transform: rotate(-8deg);

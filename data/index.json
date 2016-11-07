@@ -1,0 +1,19 @@
+{
+  "features" : [{
+      "title" : "HTML5 Boilerplate",
+      "description" : "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites."
+    }, {
+      "title" : "Nunjucks templates",
+      "description" : "A Node.js and Browser-based JavaScript Template Engine."
+    }, {
+      "title" : "Sass",
+      "description" : "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
+    }, {
+      "title" : "Babel",
+      "description" : "The compiler for writing next generation JavaScript."
+    }, {
+      "title" : "Modernizr",
+      "description" : "Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites."
+    }
+  ]
+}

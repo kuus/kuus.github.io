@@ -86,7 +86,7 @@
     var rFmaxSize = maxH / 15;
     var rFminSize = maxH / 30;
     _randomizeFonts(rFmaxSize, rFminSize);
-    TweenLite.fromTo(resume, { opacity: 0 }, { opacity: 0.2 });
+    TweenLite.fromTo(resume, 1, { opacity: 0 }, { opacity: 0.2 });
     // TweenLite.set(resume, { opacity: 0.2 });
     // TweenMax.staggerFromTo(resumeSpans, 0.5, { opacity: 0.0 }, { opacity: 1 }, 0.05);
     // TweenMax.staggerFrom(resumeSpans, 1, { fontSize: 0 }, 0.02);

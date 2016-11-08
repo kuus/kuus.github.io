@@ -1,11 +1,11 @@
 {
   "name": "kuus-github",
   "version": "0.0.1",
-  "description": "Project description",
+  "description": "Just my personal page",
   "config": {
     "namePretty": "Kuus Github",
     "nameShort": "ku",
-    "startYear": 2016
+    "startYear": 2012
   },
   "homepage": "http://kuus-github.com",
   "author": {

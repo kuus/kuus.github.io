@@ -97,6 +97,7 @@ a {
   font-size: 7.5rem;
   font-weight: 700;
   text-shadow: -2px -2px 1px rgba(0,0,0,.5);
+  transition: font-size .8s ease;
 
   &:hover {
     opacity: .5;

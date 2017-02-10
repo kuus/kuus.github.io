@@ -82,5 +82,9 @@
         "single"
       ]
     }
+  },
+  "scripts": {
+    "build": "gulp build --dist inline,htmlmin,mangle,uncss",
+    "deploy": "gulp deploy"
   }
 }

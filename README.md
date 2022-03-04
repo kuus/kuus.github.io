@@ -1,4 +1,4 @@
-# [kuus.github.io](https://kunderikuus.net)
+# [kuus.github.io](https://kuus.github.io)
 
 > Just my personal page.
 
@@ -9,4 +9,4 @@ Notes for dev
 
 License
 ---------------
-MIT © [kuus](https://kunderikuus.net)
+MIT © [kuus](https://kuus.github.io)
